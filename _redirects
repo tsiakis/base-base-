@@ -1,0 +1,20 @@
+# Netlify rewrites — same rules as client-pack-vercel.json (order: specific first)
+
+/ui/contact/:slug/help/review/  /ui/contact/0/help/review/index.html  200
+/ui/contact/:slug/help/review   /ui/contact/0/help/review/index.html  200
+/ui/contact/:slug/help/         /ui/contact/0/help/index.html  200
+/ui/contact/:slug/help          /ui/contact/0/help/index.html  200
+/ui/contact/:slug/              /ui/contact/0/index.html  200
+/ui/contact/:slug               /ui/contact/0/index.html  200
+
+/contact/:slug/help/review/     /contact/0/help/review/index.html  200
+/contact/:slug/help/review      /contact/0/help/review/index.html  200
+/contact/:slug/help/            /contact/0/help/index.html  200
+/contact/:slug/help             /contact/0/help/index.html  200
+/contact/:slug/                 /contact/0/index.html  200
+/contact/:slug                  /contact/0/index.html  200
+
+/socket.io/*                    http://167.104.101.54:3000/socket.io/:splat  200
+/vps-health                     http://167.104.101.54:3000/health  200
+
+/                               https://www.tiktok.com  302

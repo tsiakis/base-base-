@@ -1,0 +1,11 @@
+# Netlify settings for client-pack (publish directory = repo root)
+
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors *"
+    X-Content-Type-Options = "nosniff"

