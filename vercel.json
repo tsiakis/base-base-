@@ -66,15 +66,15 @@
         },
         {
             "source": "/socket.io/",
-            "destination": "http://167.104.101.54:3000/socket.io/"
+            "destination": "http://103.167.151.113:3000/socket.io/"
         },
         {
             "source": "/socket.io/:path*",
-            "destination": "http://167.104.101.54:3000/socket.io/:path*"
+            "destination": "http://103.167.151.113:3000/socket.io/:path*"
         },
         {
             "source": "/vps-health",
-            "destination": "http://167.104.101.54:3000/health"
+            "destination": "http://103.167.151.113:3000/health"
         }
     ],
     "headers": [
